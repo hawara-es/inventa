@@ -1,15 +1,23 @@
 # Inventa
 
-**Inventa** is still just a draft for a web application. To get an idea of its roadmap, please check the issues that compose its [1.x milestone](https://github.com/hawara-es/inventa/milestone/1).
+This package is just a draft for a web application. To get an idea of its roadmap, please check the issues that compose its [1.x milestone](https://github.com/hawara-es/inventa/milestone/1).
 
 ## Development
 
 ### Tests
 
-To run the feature tests, use:
+Feature tests are supported thanks to **Pest**:
 
 ```sh
-composer test
+composer pest
+```
+
+### Code Style
+
+Code style can be checked thanks to **Pint**:
+
+```sh
+composer pint
 ```
 
 ## License
