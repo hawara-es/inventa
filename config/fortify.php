@@ -33,6 +33,21 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Password Confirmation
+    |--------------------------------------------------------------------------
+    |
+    | This is an additional setting to make the password confirmation (a second
+    | input that has to be submitted along with the password) be configurable.
+    |
+    | It's not a standard Fortify setting but a setting that has been added
+    | as part of a customization of the Actions/Fortify/PasswordValidationRules
+    | class.
+    */
+
+    'use_password_confirmation' => true,
+
+    /*
+    |--------------------------------------------------------------------------
     | Username / Email
     |--------------------------------------------------------------------------
     |
@@ -46,7 +61,7 @@ return [
     |
     */
 
-    'username' => 'email',
+    'username' => 'username',
 
     'email' => 'email',
 
@@ -134,7 +149,7 @@ return [
     'features' => [
         Features::registration(),
         Features::resetPasswords(),
-        // Features::emailVerification(),
+        Features::emailVerification(),
         Features::updateProfileInformation(),
         Features::updatePasswords(),
         Features::twoFactorAuthentication([
