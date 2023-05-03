@@ -27,11 +27,43 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        self::customizeActions();
+        self::customizeViews();
+        self::setRateLimits();
+    }
+
+    /**
+     * Customize actions.
+     */
+    private static function customizeActions()
+    {
         Fortify::createUsersUsing(CreateNewUser::class);
         Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
         Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
+    }
 
+    /**
+     * Customize views.
+     */
+    private static function customizeViews()
+    {
+        Fortify::registerView('auth.register');
+        Fortify::loginView('auth.login');
+        /*
+        Fortify::confirmPasswordView('auth.confirm-password');
+        Fortify::requestPasswordResetLinkView('auth.forgot-password');
+        Fortify::resetPasswordView('auth.reset-password');
+        Fortify::twoFactorChallengeView('auth.two-factor-challenge');
+        Fortify::verifyEmailView('auth.verify-email');
+        */
+    }
+
+    /**
+     * Set rate limits.
+     */
+    private static function setRateLimits()
+    {
         RateLimiter::for('login', function (Request $request) {
             $email = (string) $request->email;
 

@@ -1,0 +1,17 @@
+.flex-column button[type=submit] {
+    margin-top: 2rem;
+    padding: .5rem;
+}
+
+.labelled-input {
+    margin-top: 1rem;
+}
+
+.labelled-input > input {
+    margin-top: .125rem;
+    padding: .5rem;
+}
+
+.is-invalid {
+    border-color: red;
+}
