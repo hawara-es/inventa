@@ -44,7 +44,7 @@ return [
     | class.
     */
 
-    'use_password_confirmation' => true,
+    'use_password_confirmation' => false,
 
     /*
     |--------------------------------------------------------------------------
