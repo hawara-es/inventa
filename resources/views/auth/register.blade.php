@@ -9,55 +9,40 @@
 
         @csrf
 
-        <x-form.errors :errors="$errors" />
+        @if (!config('inventa.forms.show_errors_next_to_fields'))
+            <x-form.errors :errors="$errors" />
+        @endif
 
-        <label class="labelled-input flex-column">
-            {{ __('Please, enter a username.') }}
+        <x-form.input
+            required autofocus
+            autocomplete="username"
+            label="Enter your new username"
+            name="username"
+            type="text">
+        </x-form.input>
 
-            <input
-                required
-                autofocus
-                autocomplete="username"
-                type="text"
-                name="username"
-                class="@error('username') is-invalid @enderror"
-                value="{{ old('username') }}" />
-        </label>
+        <x-form.input
+            required
+            autocomplete="email"
+            label="What's your email address?"
+            name="email"
+            type="email">
+        </x-form.input>
 
-        <label class="labelled-input flex-column">
-            {{ __('What\'s your email address?') }}
-
-            <input
-                required
-                autocomplete="email"
-                type="email"
-                name="email"
-                class="@error('email') is-invalid @enderror"
-                value="{{ old('email') }}" />
-        </label>
-
-        <label class="labelled-input flex-column">
-            {{ __('Choose a strong password.') }}
-
-            <input
-                required
-                type="password"
-                name="password"
-                class="@error('password') is-invalid @enderror"
-                value="" />
-        </label>
+        <x-form.input
+            required
+            label="Choose a strong password"
+            type="password"
+            name="password">
+        </x-form.input>
 
         @if (config('fortify.use_password_confirmation'))
-            <label class="labelled-input flex-column">
-                {{ __('Confirm your new password.') }}
-
-                <input
-                    required
-                    type="password"
-                    name="password_confirmation"
-                    class="@error('password_confirmation') is-invalid @enderror"
-                    value="" />
-            </label>
+            <x-form.input
+                required
+                label="Confirm your new password"
+                type="password"
+                name="password_confirmation">
+            </x-form.input>
         @endif
 
         <button type="submit">

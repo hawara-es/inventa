@@ -1,3 +1,7 @@
 @import "./utilities/container.css";
 @import "./components/layout.css";
 @import "./components/form.css";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
