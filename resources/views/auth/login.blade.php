@@ -18,29 +18,12 @@
             type="text">
         </x-form.input>
 
-        <label class="labelled-input flex-column">
-            {{ __('What\'s your username?') }}
-
-            <input
-                required
-                autofocus
-                autocomplete="username"
-                type="text"
-                name="username"
-                class="@error('username') is-invalid @enderror"
-                value="{{ old('username') }}" />
-        </label>
-
-        <label class="labelled-input flex-column">
-            {{ __('Type your password') }}
-
-            <input
-                required
-                type="password"
-                name="password"
-                class="@error('password') is-invalid @enderror"
-                value="" />
-        </label>
+        <x-form.input
+            required
+            label="Type your password"
+            type="password"
+            name="password">
+        </x-form.input>
 
         <button type="submit">
             {{ __('Login') }}
