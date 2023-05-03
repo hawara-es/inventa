@@ -1,6 +1,6 @@
 <x-layout.clear class="auth-login">
 
-    <h1>{{ __('Login') }}</h1>
+    <h1 class="title">{{ __('Login') }}</h1>
 
     <form
         class="flex-column"

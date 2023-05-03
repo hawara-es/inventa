@@ -1,6 +1,6 @@
 <x-layout.clear class="auth-register">
 
-    <h1>{{ __('Register') }}</h1>
+    <h1 class="title">{{ __('Register') }}</h1>
 
     <form
         class="flex-column"

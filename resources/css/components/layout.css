@@ -1,12 +1,17 @@
-body.layout-clear {
+.layout-clear {
     background-color: #eee;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-.layout-clear [class^='auth-'],
-.layout-clear [class*=' auth-'] {
+.layout-clear main {
     background-color: white;
     border-radius: 2rem;
-    max-width: 480px;
+    max-width: 400px;
     padding: 3rem;
     margin: 120px auto;
+}
+
+.layout-clear main .title {
+    margin: 0;
 }
