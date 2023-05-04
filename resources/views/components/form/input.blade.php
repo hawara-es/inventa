@@ -1,5 +1,5 @@
 <label class="labelled-input flex-column">
-    {{ $label }}
+    {{ __($label) }}
 
     <input
         {{ $attributes->except("label") }}
