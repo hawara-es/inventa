@@ -1,4 +1,4 @@
-<x-layout.clear class="auth-register">
+<x-layout.clear class="auth-register centered-box">
 
     <h1 class="title">{{ __('Register') }}</h1>
 
@@ -9,9 +9,7 @@
 
         @csrf
 
-        @if (!config('inventa.forms.show_errors_next_to_fields'))
-            <x-form.errors :errors="$errors" />
-        @endif
+        <x-form.errors :errors="$errors" />
 
         <x-form.input
             required autofocus

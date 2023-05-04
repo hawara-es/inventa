@@ -1,17 +1,19 @@
 .layout-clear {
     background-color: #eee;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 2rem;
 }
 
 .layout-clear main {
     background-color: white;
     border-radius: 2rem;
-    max-width: 400px;
     padding: 3rem;
-    margin: 120px auto;
 }
 
 .layout-clear main .title {
     margin: 0;
+}
+
+.layout-clear .centered-box {
+    max-width: 400px;
+    margin: 120px auto;
 }

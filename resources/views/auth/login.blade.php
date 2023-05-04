@@ -1,4 +1,4 @@
-<x-layout.clear class="auth-login">
+<x-layout.clear class="auth-login centered-box">
 
     <h1 class="title">{{ __('Login') }}</h1>
 

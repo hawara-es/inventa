@@ -1,0 +1,6 @@
+.form-errors ul {
+    list-style: none;
+    padding: .5rem;
+    font-size: 1rem;
+    color: #af2020;
+}
