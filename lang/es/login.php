@@ -5,6 +5,10 @@ return [
     'labels' => [
         'username' => '¿Cuál es tu nombre clave?',
         'password' => 'Introduce tu contraseña',
-        'submit' => 'Entrar'
-    ]
+        'submit' => 'Entrar',
+    ],
+    'navigation' => [
+        'forgot-password' => 'Olvidé mi contraseña',
+        'register' => 'Crear una cuenta',
+    ],
 ];

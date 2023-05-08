@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+.standard-gap {
+    gap: 2rem;
+}
+
 .no-padding {
     padding: 0;
 }

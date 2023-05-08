@@ -1,10 +1,12 @@
 button {
+    padding: .5rem;
     border: none;
     outline: none;
     font-size: 1.5rem;
     font-weight: 600;
     border-radius: .5rem;
     background: #fcba03;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 7px;
     color: white;
 }
 
@@ -14,11 +16,7 @@ button:hover {
 }
 
 button:focus {
-    outline: 4px solid #999;
+    box-shadow: none;
+    outline: 4px solid #fcba03;
     outline-offset: 4px;
-}
-
-.flex-column button[type=submit] {
-    margin-top: 2.5rem;
-    padding: .5rem;
 }

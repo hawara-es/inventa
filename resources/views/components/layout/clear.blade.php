@@ -1,4 +1,4 @@
-<x-html class="layout-clear no-margin">
+<x-html class="layout-clear standard-gap no-margin">
 
     <main {{ $attributes->merge([
         'role' => 'main',

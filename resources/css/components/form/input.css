@@ -1,6 +1,5 @@
 .labelled-input {
     font-size: 1.25rem;
-    margin-top: 2rem;
 }
 
 .labelled-input > input:autofill,
@@ -23,10 +22,10 @@
 
 .labelled-input > input.is-invalid {
     background-color: #f3d4d4;
-    outline-color: #af2020;
+    outline-color: #ce6262;
 }
 
 .labelled-input > input:focus,
 .labelled-input > input.is-invalid:focus {
-    outline: 4px solid #999;
+    outline: 4px solid #fcba03;
 }

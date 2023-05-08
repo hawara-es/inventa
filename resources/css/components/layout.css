@@ -5,15 +5,23 @@
 
 .layout-clear main {
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
     border-radius: 2rem;
     padding: 3rem;
 }
 
 .layout-clear main .title {
     margin: 0;
+    margin-bottom: 2rem;
 }
 
 .layout-clear .centered-box {
     max-width: 400px;
     margin: 120px auto;
+}
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #eee;
 }

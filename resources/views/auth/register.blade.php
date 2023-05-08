@@ -3,7 +3,7 @@
     <h1 class="title">{{ __('register.title') }}</h1>
 
     <form
-        class="flex-column"
+        class="flex-column standard-gap"
         action="{{ route('register') }}"
         method="POST">
 

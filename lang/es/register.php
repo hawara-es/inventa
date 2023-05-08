@@ -3,7 +3,7 @@
 return [
     'title' => 'Registro',
     'labels' => [
-        'username' => '¿Cómo quieres que te llamemos?',
+        'username' => 'Elige un nombre clave',
         'email' => '¿Cuál es tu correo electrónico?',
         'password' => 'Escoge una contraseña segura',
         'password_confirmation' => 'Confirma tu contraseña',

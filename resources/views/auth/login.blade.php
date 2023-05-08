@@ -3,7 +3,7 @@
     <h1 class="title">{{ __('login.title') }}</h1>
 
     <form
-        class="flex-column"
+        class="flex-column standard-gap"
         action="{{ route('login') }}"
         method="POST">
 
@@ -25,10 +25,16 @@
             name="password">
         </x-form.input>
 
+        <a href="/forgot-password">{{ __('login.navigation.forgot-password') }}</a>
+
         <button type="submit">
             {{ __('login.labels.submit') }}
         </button>
 
     </form>
+
+    <hr>
+
+    <a href="/register">{{ __('login.navigation.register') }}</a>
 
 </x-layout.clear>
