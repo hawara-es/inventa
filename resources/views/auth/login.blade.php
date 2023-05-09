@@ -35,6 +35,12 @@
 
     <hr>
 
-    <a href="/register">{{ __('login.navigation.register') }}</a>
+    <h2 class="title">{{ __('login.navigation.register.title') }}</h2>
+
+    <nav class="flex-column standard-gap">
+        <a class="button secondary" href="/register">
+            {{ __('login.navigation.register.action') }}
+        </a>
+    </nav>
 
 </x-layout.clear>

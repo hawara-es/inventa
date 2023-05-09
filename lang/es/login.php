@@ -9,6 +9,9 @@ return [
     ],
     'navigation' => [
         'forgot-password' => 'Olvidé mi contraseña',
-        'register' => 'Crear una cuenta',
+        'register' => [
+            'title' => '¿No tienes cuenta?',
+            'action' => 'Regístrate'
+        ]
     ],
 ];

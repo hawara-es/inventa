@@ -1,4 +1,10 @@
-button {
+a.button {
+    text-decoration: none;
+    text-align: center;
+}
+
+button,
+a.button {
     padding: .5rem;
     border: none;
     outline: none;
@@ -10,13 +16,20 @@ button {
     color: white;
 }
 
-button:hover {
+button:hover,
+a.button:hover {
     cursor: pointer;
     background: #fdcf4e;
 }
 
-button:focus {
+button:focus,
+a.button:focus {
     box-shadow: none;
     outline: 4px solid #fcba03;
     outline-offset: 4px;
+}
+
+button.secondary,
+a.button.secondary {
+    background: #666;
 }
